@@ -23,6 +23,38 @@ Aplikasi catatan pribadi sederhana yang dibangun menggunakan React dengan Class 
 * Node.js (disarankan versi LTS)
 * npm (biasanya terinstal bersama Node.js)
 
+## Struktur Proyek
+
+```bash
+.
+├── index.html           # Entry point HTML
+├── package.json         # Metadata proyek dan dependensi
+├── vite.config.js       # Konfigurasi Vite
+├── README.md            # Dokumentasi proyek
+├── .gitignore           # File/folder yang diabaikan Git
+├── eslint.config.js     # Konfigurasi ESLint
+├── public/
+│   └── vite.svg         # Contoh aset publik
+└── src/
+    ├── assets/
+    │   └── react.svg    # Contoh aset di dalam source
+    ├── components/      # Komponen-komponen React UI
+    │   ├── ArchiveButton.jsx
+    │   ├── DeleteButton.jsx
+    │   ├── NoteApp.jsx      # Komponen utama aplikasi
+    │   ├── NoteHeader.jsx
+    │   ├── NoteInput.jsx
+    │   ├── NoteItem.jsx
+    │   ├── NoteItemBody.jsx
+    │   └── NotesList.jsx
+    ├── styles/
+    │   └── style.css    # Styling global
+    ├── utils/
+    │   └── index.js     # Fungsi utilitas (getInitialData, showFormattedDate)
+    └── index.jsx        # Entry point aplikasi React
+
+```
+
 ## Cara Menjalankan
 
 1.  *Clone* repositori ini:
