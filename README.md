@@ -1,12 +1,50 @@
-# React + Vite
+# Aplikasi Catatan Pribadi - React Class Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi catatan pribadi sederhana yang dibangun menggunakan React dengan Class Components dan di-*bundle* menggunakan Vite. Aplikasi ini memungkinkan pengguna untuk membuat, melihat, mencari, mengarsipkan/mengaktifkan kembali, dan menghapus catatan.
 
-Currently, two official plugins are available:
+## Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Buat Catatan:** Menambahkan catatan baru dengan judul dan isi (body). Terdapat validasi batas karakter untuk judul (maksimal 50 karakter).
+* **Lihat Catatan:** Menampilkan daftar catatan aktif dan catatan yang diarsipkan secara terpisah.
+* **Cari Catatan:** Mencari catatan berdasarkan judul (case-insensitive) melalui *search bar*.
+* **Arsipkan/Aktifkan:** Memindahkan catatan antara daftar aktif dan arsip.
+* **Hapus Catatan:** Menghapus catatan secara permanen.
+* **Tanggal Diformat:** Menampilkan tanggal pembuatan catatan dalam format yang mudah dibaca.
 
-## Expanding the ESLint configuration
+## Teknologi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Class Components)
+* Vite
+* CSS
+* JavaScript (ES6+)
+
+## Prasyarat
+
+* Node.js (disarankan versi LTS)
+* npm (biasanya terinstal bersama Node.js)
+
+## Cara Menjalankan
+
+1.  *Clone* repositori ini:
+    ```bash
+    git clone <URL_REPOSITORY_ANDA>
+    cd react-notes-app-classcomp
+    ```
+2.  Instal dependensi:
+    ```bash
+    npm install
+    ```
+3.  Jalankan aplikasi dalam mode pengembangan:
+    ```bash
+    npm run dev
+    ```
+4.  Buka browser dan akses `http://localhost:<PORT>` (port akan ditampilkan di terminal setelah menjalankan `npm run dev`, biasanya 5173).
+
+## Skrip Tersedia
+
+* `npm run dev`: Menjalankan aplikasi dalam mode pengembangan dengan *hot reload*.
+* `npm run build`: Membangun aplikasi untuk produksi di direktori `dist`.
+* `npm run lint`: Menjalankan ESLint untuk memeriksa *code style*.
+* `npm run preview`: Menjalankan *build* produksi secara lokal untuk pratinjau.
+
+---
