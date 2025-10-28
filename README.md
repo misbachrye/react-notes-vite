@@ -27,8 +27,8 @@ Aplikasi catatan pribadi sederhana yang dibangun menggunakan React dengan Class 
 
 1.  *Clone* repositori ini:
     ```bash
-    git clone <URL_REPOSITORY_ANDA>
-    cd react-notes-app-classcomp
+    git clone <URL_REPOSITORY>
+    cd react-notes-vite
     ```
 2.  Instal dependensi:
     ```bash
